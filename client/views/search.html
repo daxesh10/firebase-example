@@ -1,0 +1,44 @@
+
+<div class="container col-sm-14">
+  <form>
+
+    <div class="form-group row">
+      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Name</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" ng-model="uname" placeholder="name">
+      </div>
+    </div>
+
+
+
+    <div class="form-group row">
+      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+      <div class="col-sm-8">
+        <input type="email" class="form-control form-control-lg" id="lgFormGroupInput" ng-model="uemail" placeholder="you@example.com">
+      </div>
+    </div>
+
+      <div class="form-group row">
+      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Messasge</label>
+      <div class="col-sm-8">
+        <textarea rows="5" class="form-control form-control-lg" id="lgFormGroupInput" ng-model="umsg" placeholder="message">
+      </textarea>
+      </div>
+    </div>
+
+          <button type="submit" ng-click="addUser()" class="btn btn-primary" id="registerbtn">Submit</button>
+    
+  </form>
+</div>
+
+
+
+<!--<a href="#" ng-click="listview()"><h4>Messasges</h4></a>-->
+
+
+
+
+<div ng-repeat="x in myList">
+
+<pre ng-repeat="m in x"><table class="table"><h5>{{x.$key}}</h5><tr ng-repeat="(key,val) in m"><td> {{key}} </td><td> {{val}} </td></tr></table></pre>
+</div>

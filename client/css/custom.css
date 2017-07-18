@@ -1,0 +1,14 @@
+#registerbtn
+{
+ 
+    background-color:darkcyan;
+    color: black;
+    border-radius: 8px;
+    float: left;
+    padding-left: 20px;
+}
+
+#registerbtn:hover {
+    background-color: #4CAF50;
+    color: white;
+}

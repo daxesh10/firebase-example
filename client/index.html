@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<base href="/">
+
+		<title>TVMaze App</title>
+
+
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-resource.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+
+		<script src="js/app.js"></script>
+		<script src="js/controller/search.js"></script>
+		<script src="js/service/search.js"></script>
+		<script src="js/service/spotify.js"></script>
+		<script src="js/controller/spotify.js"></script>
+		
+	</head>
+	<body ng-app="app">
+
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="navbar-header">
+				<h4><a href="#msg">TVMaze App</a></h4>
+				<h4 class="navbar-brand"><a href="#lab5">lab5</a></h4>
+				<h3 class="navbar-brand"><a href="#spotify">spotify</a></h3>
+
+			</div>
+		</nav>
+
+		<div ng-view></div>
+
+	</body>
+</html>

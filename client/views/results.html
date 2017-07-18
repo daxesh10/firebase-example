@@ -1,0 +1,20 @@
+<p> this is result page directive </p>
+<table class="table"> 
+    <tr>
+     <th>Generes</th> 
+     </tr>
+    <tr>    
+    <td >{{gentxt}}</td>
+    <!--<td ng-model="genhtml" ng-repeat="gen in selectedLink.genres">| {{gen}} </td></tr>-->
+    </tr>
+<br>
+<th> Images </th>
+<tr>
+<td><img ng-src={{selectedLink.images[0].url}} alt={{selectedLink.images[0].url}}><br></td>    
+ </tr>
+
+<br>
+</table>
+    <div class="container" style="overflow-x: scroll; height:400px;"><table class="table"><th>albums</th><tr><td ng-repeat="u in urls"> <img src={{u.url}}> </td></tr></table></div>
+        <!--<tr><td  ng-repeat="images in albumimages"><li ng-repeat="img in images"><img ng-src={{img.url}}></li></td></tr>
+    </table> -->
